@@ -9,23 +9,17 @@ public class numpat{
       int x = sc.nextInt();
 
       for(int i =1;i<=x;i++)
-      {   int count =1;
+      {   
 
-          for(int j =i;j<=x;j++)
+          for(int j =1;j<=x;j++)
           {
           	
-
-            
-                for(int k = 1;k<=x;k++)
+                for(int k = i;k<=x;k++)
                 {
 
-                 System.out.print(count);
+                 System.out.print(j);
 
                 }
-
-                count++;
-
-             
 
           }
           
