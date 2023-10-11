@@ -11,7 +11,7 @@ public class numpat{
       for(int i =1;i<=x;i++)
       {   
 
-          for(int j =1;j<=x;j++)
+          for(int j = 1;j<=x;j++)
           {
           	
                 for(int k = i;k<=x;k++)
