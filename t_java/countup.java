@@ -1,3 +1,4 @@
+// count up  
 package t_jav;
 
 import java.util.Scanner;
