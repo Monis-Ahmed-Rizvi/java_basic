@@ -13,7 +13,6 @@ public class dec_to_binary {
 		  dec_to_bin(n/2);
 		  System.out.print(n%2);
 		  
-		  
 	  }
 		
 	}
