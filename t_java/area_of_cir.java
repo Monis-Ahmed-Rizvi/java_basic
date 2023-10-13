@@ -3,7 +3,7 @@ package t_jav;
 import java.util.*;
 public class area_of_cir {
 	
-	public static double cal(double r)
+	public static double calculateArea(double r)
 	{
 		return Math.PI * r * r;
 		
@@ -21,7 +21,7 @@ public class area_of_cir {
 	
 	
 	public static double calculateArea(double xc, double yc, double xp, double yp) {
-	return cal(dist(xc, yc, xp, yp));
+	return calculateArea(dist(xc, yc, xp, yp));
 	}
 	
 	
