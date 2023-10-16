@@ -1,3 +1,5 @@
+// debugging rand_arr by individually 
+
 package t_jav;
 
 public class hist {
