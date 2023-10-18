@@ -125,6 +125,24 @@ public class time {
 	  
   }
   
+  public time add(time t2)
+  {
+	 time sum = new time();
+	 
+	 sum.hours =  this.hours + t2.hours;
+	 sum.minutes = this.minutes + t2.minutes;
+	 sum.seconds = this.seconds + t2.seconds;
+	 
+	 if(sum.minutes >= 60)
+	 {
+		 int ex_min = 0;
+		 sum.hours+=1;
+		 ex_min = sum.minutes - 60;
+		 sum.minutes = ex_min;
+	 }
+	 
+	 return sum;  
+  }
   
   
 }
