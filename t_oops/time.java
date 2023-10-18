@@ -60,7 +60,7 @@ public class time {
   }
   
 
-  public void setSecond(int seconds)
+  public void setSecond(double seconds)
   {
 	  this.seconds = seconds;
   }
@@ -79,6 +79,16 @@ public class time {
   {
 	  return String.format("%02d:%02d:%04.1f\n", this.hours, this.minutes, this.seconds);
   }
+  
+  
+  // creating a equals method to check for same values in diffrent object
+  
+  public boolean equals(time that)
+  {
+	  return this.hours == that.hours && this.minutes == that.minutes && this.seconds == that.seconds;
+  }
+  
+  
   
   
 }
