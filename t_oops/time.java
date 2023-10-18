@@ -88,6 +88,42 @@ public class time {
 	  return this.hours == that.hours && this.minutes == that.minutes && this.seconds == that.seconds;
   }
   
+  // display in 12:00 hour format
+  
+  public void displayFormat()
+  {
+	  
+      String ampm = "";
+      int hour_f = 0;
+      if(this.hours < 12)
+	  {
+		  
+		  
+		  if(this.hours==0)
+		  {
+			  // midnight
+			  hour_f = 12; 
+		  }
+		  ampm = "AM";
+		  hour_f = this.hours;
+	  }
+      
+      else if(this.hours>=12)
+      {
+    	  
+    	  ampm = "PM";
+    	  hour_f = this.hours - 12;
+    	  if(this.hours==12)
+    	  {
+    		  hour_f = 12;
+    	  }
+      }
+      
+      System.out.printf("%2d:%2d: %.2f %s",hour_f,this.minutes,this.seconds,ampm);
+      
+      
+	  
+  }
   
   
   
